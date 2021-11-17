@@ -33,4 +33,16 @@ These are project that can make sicpa good place to work
 3. Leave planner 
 4. Leave request
 5. Work order task ink, solvent, opm, site activities
-6. Service desk app
+    i Procedures of ink refill
+    - Take the picture of full bottle to show serial no and tag no
+    - Write installation date on the bottle using pen
+    - Measure the weight of full bottle and take picture of the scale display
+    - Take picture of the printer tank level before refill to show %
+    - Refill the tank
+    - Take the picture of the printer tank level after refill
+    - Activate the tag and take the picture of success message in the printer screen
+    - Meter the weight of the bottle after refill and take picture of the scale display
+    - Add netralizer and take the picture of the scale display to show the weight after neutralization
+    - Store the Neutralized bottle to the yellow cabinet and take the picture
+    - Close the work order
+7. Service desk app
