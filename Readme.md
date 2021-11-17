@@ -33,11 +33,13 @@ These are project that can make sicpa good place to work
 3. Leave planner 
 4. Leave request
 5. Work order task ink, solvent, opm, site activities
+
     i. Procedures of ink refill
     - Take the picture of full bottle to show serial no and tag no
     - Write installation date on the bottle using pen
     - Measure the weight of full bottle and take picture of the scale display
     - Take picture of the printer tank level before refill to show %
+    - Write the printer serial no and take picture
     - Refill the tank
     - Take the picture of the printer tank level after refill
     - Activate the tag and take the picture of success message in the printer screen
