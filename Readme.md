@@ -43,7 +43,7 @@ These are project that can make sicpa good place to work
     - Refill the tank
     - Take the picture of the printer tank level after refill
     - Activate the tag and take the picture of success message in the printer screen
-    - Meter the weight of the bottle after refill and take picture of the scale display
+    - Measure the weight of the bottle after refill and take picture of the scale display
     - Add netralizer and take the picture of the scale display to show the weight after neutralization
     - Store the Neutralized bottle to the yellow cabinet and take the picture
     - Close the work order
