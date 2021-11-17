@@ -5,10 +5,10 @@ These are project that can make sicpa good place to work
         - change password
         - forgot password? reset password
         - remember me password
-        - Level 1 admin
-        - level 2 admin
-        - level 3 admin
-        - level 4 admin 
+        - Level 1 admin(Platnum)
+        - level 2 admin(Gold)
+        - level 3 admin(Silver)
+        - level 4 admin(cupper) 
        
      2. Start shift and End shift button to track time duration(time counter)
      3. Check the status of Backup printer(is it serviced?, is it Ok, any fault, ink and solvent %)
