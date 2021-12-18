@@ -2,6 +2,7 @@ These are project that can make sicpa good place to work
 1. Attendance register with shift handover
      1. Signup and sign in
         - email and password authentication
+        - two point verification email, phone number, authenticator
         - change password
         - forgot password? reset password
         - remember me password
