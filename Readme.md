@@ -8,7 +8,7 @@ These are project that can make sicpa good place to work
         - Level 1 admin(Platnum)
         - level 2 admin(Gold)
         - level 3 admin(Silver)
-        - level 4 admin(cupper) 
+        - level 4 admin(copper) 
        
      2. Start shift and End shift button to track time duration(time counter)
      3. Check the status of Backup printer(is it serviced?, is it Ok, any fault, ink and solvent %)
@@ -17,8 +17,8 @@ These are project that can make sicpa good place to work
      6. Reduce blobs and invalid until you reach the ideal value and record
      7. Activities during shift i.e ink, solvent, opm, corrective maintanance, cleaning etc.
      8. Issues and incidents
-     9. Spare part used
-     10. Consumables used used
+     9. Spare part used fill wo number
+     10. Consumables used used fill wo number
      11. Inventory i.e available materials
      12. Tools handover
      13. Missing tools
@@ -27,10 +27,11 @@ These are project that can make sicpa good place to work
      16. Handover by, take over by Name and signature
      17. Download handover report in pdf format like one given with Marwa
      18. Team leader accept he will not close untill mention the required spare
-     19. Manager accept he will not close until mention the requested spare
-     20. Hr accept 
-     21. Updates column i.e production start or stopped, any incident with no 
-     22. Pending issues the acceptor must read the pending issue and close the shift until he has resolved the pending issues
+     19. Team leader is checking in the morning/night and see who login if not he click and will notify via email/whatsapp group
+     20. Manager accept he will not close until mention the requested spare
+     21. Hr accept 
+     22. Updates column i.e production start or stopped, any incident with no 
+     23. Pending issues the acceptor must read the pending issue and close the shift until he has resolved the pending issues
 2. Shift planner
 3. Leave planner 
 4. Leave request
