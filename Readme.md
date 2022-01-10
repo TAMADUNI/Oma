@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 These are project that can make sicpa good place to work
 1. Attendance register with shift handover
      1. Signup and sign in
@@ -37,7 +36,6 @@ These are project that can make sicpa good place to work
 4. Leave request
 5. Work order task ink, solvent, opm, site activities
 6. Service desk app
-=======
 These are project that can make sicpa good place to work
 1. Attendance register with shift handover
      1. Signup and sign in
@@ -92,4 +90,3 @@ These are project that can make sicpa good place to work
     - Store the Neutralized bottle to the yellow cabinet and take the picture
     - Close the work order
 7. Service desk app
->>>>>>> 50e3fb19e8899a4a3c30d2f0f3d49dc35ab7bb91
