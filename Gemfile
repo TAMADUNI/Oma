@@ -70,3 +70,4 @@ gem "rspec-rails", "~> 7.1"
 gem "factory_bot_rails", "~> 6.4"
 gem "database_cleaner", "~> 2.1"
 gem "faker", "~> 3.5"
+gem 'simplecov', require: false, group: :test
