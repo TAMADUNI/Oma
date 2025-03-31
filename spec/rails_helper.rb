@@ -34,7 +34,7 @@ rescue ActiveRecord::PendingMigrationError => e
 end
 RSpec.configure do |config|
   config.include Devise::Test:ControllersHelper, type: :controller
-  config.include Devise::Test:ControllersHelper, type: :controller
+  config.include Devise::Test:IntegrationsHelper, type: :controller
   config.include Devise::Test:ControllersHelper, type: :controller
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
