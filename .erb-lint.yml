@@ -1,0 +1,9 @@
+linters:
+  Indentation:
+    enabled: true
+  TrailingWhitespace:
+    enabled: true
+  SpaceBeforeScript:
+    enabled: true
+  FinalNewline:
+    enabled: true
