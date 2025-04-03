@@ -85,8 +85,6 @@ production:
   primary: &primary_production
     <<: *default
     database: oma_production
-    username: oma
-    password: <%= ENV["OMA_DATABASE_PASSWORD"] %>
   cache:
     <<: *primary_production
     database: oma_production_cache
