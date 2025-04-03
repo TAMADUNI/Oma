@@ -106,6 +106,7 @@ Navigate to the project folder make sure Rspec is installed and then run the fol
 | `rspec spec/requests --format doc` |	Run all rspec tests well formated
 | `rspec spec/requests -f d` |	Run all rspec tests well formated
 | `EDITOR='code --wait' rails credentials:edit` | Edit credentials |
+| `rspec spec/requests -f d` |	Run all rspec tests well formated
 | `rails routes | grep users` | check routes of the specific resource |
 
 ## Author
