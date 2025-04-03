@@ -67,3 +67,5 @@ group :development do
 end
 
 gem "simplecov", require: false, group: :test
+gem 'erb_lint', require: false
+
