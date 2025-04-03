@@ -103,6 +103,7 @@ Navigate to the project folder make sure Rspec is installed and then run the fol
 | `rubocop -a` | Fix all the lint errors automatically |
 | `bundle exec erblint app/views` |	Run erb linter
 | `bundle exec erblint --autocorrect app/views` |	Run erb linter autocorrect
+| `rubocop --require rubocop-erb` |	Run erb linter autocorrect with rubocop
 | `bundle exec rspec` | Run rspec tests |
 | `rspec spec/requests --format documentation` |	Run all rspec tests well formated
 | `rspec spec/requests --format doc` |	Run all rspec tests well formated
