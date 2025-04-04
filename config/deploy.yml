@@ -2,7 +2,7 @@
 service: oma
 
 # Name of the container image.
-image: your-user/oma
+image: ibunhabibu/oma
 
 # Deploy to these servers.
 servers:
