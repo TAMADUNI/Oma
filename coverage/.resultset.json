@@ -1,0 +1,13 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/mnt/c/Users/projects/rails/Oma/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      }
+    },
+    "timestamp": 1744037111
+  }
+}
