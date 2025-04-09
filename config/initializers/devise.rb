@@ -21,7 +21,8 @@ Devise.setup do |config|
   # config.parent_controller = 'DeviseController'
 
   # Hotwire 
-
+  config.responder.error_status = :unprocessable_entity
+  config.responder.redirect_status = :see_other
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
