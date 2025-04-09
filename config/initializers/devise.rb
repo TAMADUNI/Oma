@@ -19,6 +19,7 @@ Devise.setup do |config|
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
+  
 # Hotwire 
 
   # ==> Mailer Configuration
