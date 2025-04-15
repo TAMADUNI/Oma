@@ -57,6 +57,7 @@ group :development, :test do
   gem "faker"
   
   gem "shoulda-matchers"
+  
 end
 
 group :development do
@@ -64,7 +65,6 @@ group :development do
   gem "web-console"
   gem "capybara"
   gem "webdrivers"
-  gem "database_cleaner-active_record"
 end
 
 gem "simplecov", require: false, group: :test
