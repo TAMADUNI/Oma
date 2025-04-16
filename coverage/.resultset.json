@@ -14,30 +14,7 @@
         ]
       },
       "/mnt/c/Users/projects/rails/Oma/spec/models/user_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/mnt/c/Users/projects/rails/Oma/app/models/user.rb": {
-        "lines": [
-          1,
-          null,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/mnt/c/Users/projects/rails/Oma/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
+        "lines": []
       },
       "/mnt/c/Users/projects/rails/Oma/spec/requests/home_spec.rb": {
         "lines": [
@@ -81,8 +58,25 @@
           1,
           null
         ]
+      },
+      "/mnt/c/Users/projects/rails/Oma/app/models/user.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/projects/rails/Oma/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1744731658
+    "timestamp": 1744834581
   }
 }
