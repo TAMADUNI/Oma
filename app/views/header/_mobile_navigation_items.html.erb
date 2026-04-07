@@ -1,0 +1,17 @@
+<%# app/views/layouts/_mobile_navigation_items.html.erb %>
+<% navigation_items.each do |item| %>
+  <% next if item[:admin] && !current_user&.admin? %>
+  <% next if item[:super_admin] && !current_user&.super_admin? %>
+  <% next if item[:authenticated] && !user_signed_in? %>
+  <% next if item[:public] && user_signed_in? %>
+  
+  <% if item[:method] %>
+    <%= button_to item[:name], item[:path], 
+        method: item[:method],
+        class: "block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700",
+        data: { turbo_method: item[:method] } %>
+  <% else %>
+    <%= link_to item[:name], item[:path], 
+        class: "block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700" %>
+  <% end %>
+<% end %>
