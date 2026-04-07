@@ -8,7 +8,7 @@ class User < ApplicationRecord
 
   has_many :sessions, dependent: :destroy
 
-  enum role: {
+   enum :role, {
     user: 'user',
     admin: 'admin',
     super_admin: 'super_admin'
