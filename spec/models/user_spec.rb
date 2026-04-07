@@ -46,7 +46,93 @@ RSpec.describe User, type: :model do
   describe "enums" do
     it { should define_enum_for(:role).with_values(employee: 0, team_leader: 1, operation_manager: 2, hr_manager: 3, admin: 4) }
   end
-  
+
+   describe "role-based methods" do
+    let(:employee) { create(:user, :employee) }
+    let(:team_leader) { create(:user, :team_leader) }
+    let(:operation_manager) { create(:user, :operation_manager) }
+    let(:hr_manager) { create(:user, :hr_manager) }
+    let(:admin) { create(:user, :admin) }
+    
+    describe "#employee?" do
+      it "returns true for employee" do
+        expect(employee.employee?).to be true
+      end
+      
+      it "returns false for other roles" do
+        expect(team_leader.employee?).to be false
+        expect(operation_manager.employee?).to be false
+        expect(hr_manager.employee?).to be false
+        expect(admin.employee?).to be false
+      end
+    end
+
+    describe "#operation_manager?" do
+      it "returns true for operation_manager" do
+        expect(operation_manager.operation_manager?).to be true
+      end
+    end
+    
+    describe "#hr_manager?" do
+      it "returns true for hr_manager" do
+        expect(hr_manager.hr_manager?).to be true
+      end
+    end
+    
+    describe "#admin?" do
+      it "returns true for admin" do
+        expect(admin.admin?).to be true
+      end
+    end
+
+    describe "#can_manage_team?" do
+      it "returns true for team_leader and above" do
+        expect(team_leader.can_manage_team?).to be true
+        expect(operation_manager.can_manage_team?).to be true
+        expect(hr_manager.can_manage_team?).to be true
+        expect(admin.can_manage_team?).to be true
+        expect(employee.can_manage_team?).to be false
+      end
+    end
+
+     describe "#can_manage_operations?" do
+      it "returns true for operation_manager and above" do
+        expect(operation_manager.can_manage_operations?).to be true
+        expect(hr_manager.can_manage_operations?).to be true
+        expect(admin.can_manage_operations?).to be true
+        expect(employee.can_manage_operations?).to be false
+        expect(team_leader.can_manage_operations?).to be false
+      end
+    end
+    describe "#can_manage_hr?" do
+      it "returns true for hr_manager and admin" do
+        expect(hr_manager.can_manage_hr?).to be true
+        expect(admin.can_manage_hr?).to be true
+        expect(employee.can_manage_hr?).to be false
+        expect(team_leader.can_manage_hr?).to be false
+        expect(operation_manager.can_manage_hr?).to be false
+      end
+    end
+  end
+
+  describe "supervisor hierarchy" do
+    let(:employee) { create(:user, :employee) }
+    let(:team_leader) { create(:user, :team_leader) }
+    let(:operation_manager) { create(:user, :operation_manager) }
+    let(:hr_manager) { create(:user, :hr_manager) }
+    
+    before do
+      employee.update!(supervisor: team_leader)
+      team_leader.update!(supervisor: operation_manager)
+      operation_manager.update!(supervisor: hr_manager)
+    end
+    
+    describe "#direct_supervisor" do
+      it "returns direct supervisor" do
+        expect(employee.direct_supervisor).to eq(team_leader)
+      end
+    end
+    
    describe "custom methods" do
     let(:user) { create(:user) }
     
