@@ -1,4 +1,4 @@
-<%# app/views/layouts/_navigation.html.erb %>
+<%# app/views/header/_navigation.html.erb %>
 <nav class="bg-gray-900" data-controller="navigation" data-navigation-target="nav">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
@@ -6,7 +6,7 @@
       <div class="flex items-center">
         <div class="flex-shrink-0">
           <%= link_to root_path, class: "flex items-center" do %>
-            <%= image_tag "sicpa-logo.png", class: "h-8 w-8", alt: "Sicpa" %>
+            <%= image_tag "sicpa-logo.svg", class: "h-8 w-8", alt: "Sicpa" %>
             <span class="ml-2 text-white font-bold text-lg hidden md:block">Sicpa</span>
           <% end %>
         </div>
@@ -14,7 +14,7 @@
         <!-- Desktop navigation -->
         <div class="hidden md:block">
           <div class="ml-10 flex items-baseline space-x-4">
-            <%= render "layouts/navigation_items" %>
+            <%= render "header/navigation_items" %>
           </div>
         </div>
       </div>
@@ -22,7 +22,7 @@
       <!-- Right side navigation -->
       <div class="hidden md:block">
         <div class="ml-4 flex items-center md:ml-6">
-          <%= render "layouts/navigation_right" %>
+          <%= render "header/navigation_right" %>
         </div>
       </div>
       
@@ -48,10 +48,10 @@
   <!-- Mobile menu -->
   <div class="hidden md:hidden" id="mobile-menu" data-navigation-target="mobileMenu">
     <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-      <%= render "layouts/mobile_navigation_items" %>
+      <%= render "header/mobile_navigation_items" %>
     </div>
     <div class="pt-4 pb-3 border-t border-gray-700">
-      <%= render "layouts/mobile_navigation_right" %>
+      <%= render "header/mobile_navigation_right" %>
     </div>
   </div>
 </nav>

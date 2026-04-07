@@ -8,3 +8,79 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+
+ /* app/assets/stylesheets/application.css */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.animate-slide-down {
+  animation: slideDown 0.3s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s ease-out;
+}
+
+/* Dropdown animations */
+.dropdown-enter {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.dropdown-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 150ms, transform 150ms;
+}
+
+.dropdown-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.dropdown-exit-active {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 150ms, transform 150ms;
+}
+
+/* User avatar hover effect */
+.user-avatar {
+  transition: transform 0.2s ease-in-out;
+}
+
+.user-avatar:hover {
+  transform: scale(1.05);
+}
+
+/* Navigation link active indicator */
+.nav-link-active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: currentColor;
+  border-radius: 2px;
+}
