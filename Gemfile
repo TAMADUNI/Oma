@@ -68,7 +68,9 @@ end
 group :test do 
    gem "capybara"
   gem "selenium-webdriver"
+  gem 'simplecov', require: false
 end
 
 gem "chartkick"
 gem "groupdate"
+gem "devise", "~> 5.0"
