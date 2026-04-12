@@ -68,7 +68,7 @@ end
 group :test do 
   gem "capybara"
   gem "selenium-webdriver"
-  
+   gem "webdrivers"   # 👈 ADD THIS
   gem 'simplecov', require: false
   gem 'simplecov-tailwindcss', require: false
 end
