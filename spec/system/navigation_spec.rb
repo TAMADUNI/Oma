@@ -22,8 +22,8 @@ RSpec.describe 'Navigation', type: :system do
       visit root_path
       page.driver.browser.manage.window.resize_to(768, 1024)
       
-      expect(page).to have_css('[data-controller="mobile-menu"]')
-      expect(page).to have_button('Open menu')
+      expect(page).to have_css('[data-controller="navigation"]')
+      expect(page).to have_button('button[data-action="click->navigation#toggleMenu"]')
     end
   end
   
