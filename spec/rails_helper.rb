@@ -20,19 +20,21 @@ SimpleCov.formatters =
 # ========== FIXED CAPYBARA CONFIGURATION ==========
 Capybara.register_driver :selenium_chrome do |app|
   options = Selenium::WebDriver::Chrome::Options.new
-  
-  # CRITICAL: Set the correct binary path to Chromium
-  options.binary = "/usr/bin/chromium-browser"
-  
+
+  options.binary = "/snap/bin/chromium"
+
   options.add_argument("--headless=new")
   options.add_argument("--no-sandbox")
+  options.add_argument("--disable-setuid-sandbox")
   options.add_argument("--disable-dev-shm-usage")
   options.add_argument("--window-size=1400,1400")
   options.add_argument("--disable-gpu")
-  
+  options.add_argument("--remote-debugging-port=9222")
+
   Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)
 end
 
+Capybara.default_driver = :selenium_chrome
 Capybara.javascript_driver = :selenium_chrome
 # =================================================
 
