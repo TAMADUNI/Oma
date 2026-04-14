@@ -67,8 +67,8 @@ end
 
 group :test do 
   gem "capybara"
-  gem "selenium-webdriver"
-  gem "webdrivers"   # 👈 ADD THIS
+  gem "selenium-webdriver", "~> 4.28.0"  # Update to latest
+  # gem "webdrivers"   # 👈 ADD THIS
   gem 'simplecov', require: false
   gem 'simplecov-tailwindcss', require: false
 end
