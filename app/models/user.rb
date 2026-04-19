@@ -14,8 +14,6 @@ class User < ApplicationRecord
     super_admin: 'super_admin'
   }
 
-  validates :first_name, :last_name, presence: true
-  validates :terms_of_service, acceptance: true
   validates :role, presence: true
 
   before_create :set_default_role
@@ -23,9 +21,7 @@ class User < ApplicationRecord
 
   scope :active, -> { where(active: true) }
 
-  def full_name
-    "#{first_name} #{last_name}".strip
-  end
+
 
   def admin?
     admin? || super_admin?
