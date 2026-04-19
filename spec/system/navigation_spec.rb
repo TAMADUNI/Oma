@@ -33,7 +33,7 @@ RSpec.describe 'Navigation', type: :system do
     
     before do
       sign_in user
-      visit root_path
+      visit root_pathP
     end
     
     it 'shows authenticated user navigation links' do
