@@ -23,7 +23,8 @@ RSpec.describe 'Navigation', type: :system do
       page.driver.browser.manage.window.resize_to(768, 1024)
       
       expect(page).to have_css('[data-controller="navigation"]')
-      expect(page).to have_button('button[data-action="click->navigation#toggleMenu"]')
+      expect(page).to have_css('button[data-action="click->navigation#toggleMenu"]')
+      expect(page).to have_button('Open main menu')
     end
   end
   
