@@ -4,8 +4,6 @@ FactoryBot.define do
     email { Faker::Internet.unique.email }
     password { 'Password123!' }
     password_confirmation { 'Password123!' }
-    terms_of_service { true }
-    active { true }
     role { :user }
     
     trait :admin do
@@ -14,14 +12,6 @@ FactoryBot.define do
     
     trait :super_admin do
       role { :super_admin }
-    end
-    
-    trait :inactive do
-      active { false }
-    end
-    
-    trait :without_terms do
-      terms_of_service { false }
     end
     
     factory :admin_user, traits: [:admin]
