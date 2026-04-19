@@ -20,7 +20,7 @@ RSpec.describe 'Navigation', type: :system do
     
     it 'shows mobile menu button on small screens' do
       visit root_path
-      page.driver.browser.manage.window.resize_to(768, 1024)
+      page.driver.browser.manage.window.resize_to(375, 800)
       
       expect(page).to have_css('[data-controller="navigation"]')
       expect(page).to have_css('button[data-action="click->navigation#toggleMenu"]')
